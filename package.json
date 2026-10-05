@@ -1,0 +1,22 @@
+{
+  "name": "mirror-ray-backend",
+  "version": "1.0.0",
+  "description": "二维平面镜射线多次反射教学后端（API + CLI，TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "tsx --test test/*.test.ts",
+    "demo": "tsx src/demo.ts",
+    "cli": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.9.0"
+  }
+}
