@@ -1,0 +1,15 @@
+{
+  "name": "mirror-ray-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "二维平面镜射线多次反射与最近交点解释后端 (TypeScript + Node.js + SQLite)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.ts",
+    "start": "node src/api.ts",
+    "cli": "node src/cli.ts",
+    "demo": "node src/demo.ts"
+  }
+}
